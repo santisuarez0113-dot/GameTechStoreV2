@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_oscuro"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- Icono de la app -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/logo_de_gametech_store"
+        android:src="@mipmap/ic_launcher" />
+
+    <!-- Nombre de la tienda -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/gametech_store"
+        android:textColor="@color/cian_neon"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

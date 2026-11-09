@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_oscuro"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard Administrador"
+        android:textColor="@color/cian_neon"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Control General GameTech"
+        android:textColor="@color/gris_texto"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Tarjeta de Reporte de Ventas -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/morado_gamer"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reporte de Ventas (Global)"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$15.450.000"
+                android:textColor="@color/cian_neon"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Botones de Gestión -->
+    <Button
+        android:id="@+id/btnGestionUsuarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestión de Usuarios"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/morado_gamer"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnGestionProductos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestión de Productos (Catálogo)"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/morado_gamer"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnCerrarSesionAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesión"
+        android:textColor="@color/cian_neon"
+        android:backgroundTint="@color/fondo_oscuro"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>

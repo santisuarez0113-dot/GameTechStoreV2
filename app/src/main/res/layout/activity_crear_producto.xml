@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_oscuro"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Producto"
+        android:textColor="@color/cian_neon"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etNombreProd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del producto"
+        android:textColorHint="@color/gris_texto"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/cian_neon"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etPrecioProd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio (Ej: 150000)"
+        android:textColorHint="@color/gris_texto"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:backgroundTint="@color/cian_neon"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etStockProd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad en stock"
+        android:textColorHint="@color/gris_texto"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:backgroundTint="@color/cian_neon"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnGuardarProd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Producto"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/morado_gamer"/>
+
+</LinearLayout>

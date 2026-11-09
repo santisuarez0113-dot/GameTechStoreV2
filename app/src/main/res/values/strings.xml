@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GameTechStore</string>
+
+    <!-- Textos de la pantalla de Login -->
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="ingresar_con_huella">Ingresar con Huella</string>
+    <string name="gametech_store">GameTech Store</string>
+    <string name="logo_de_gametech_store">Logo de GameTech Store</string>
+</resources>

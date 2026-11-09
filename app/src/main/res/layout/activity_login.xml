@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_oscuro"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Logo de GameTech Store"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a GameTech"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Campo Correo -->
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:textColorHint="@color/gris_texto"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/cian_neon"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Mensaje de error para el Correo -->
+    <TextView
+        android:id="@+id/tvErrorCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF5252"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"
+        android:visibility="invisible" />
+
+    <!-- Campo Contraseña -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:textColorHint="@color/gris_texto"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/cian_neon"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Mensaje de error para la Contraseña -->
+    <TextView
+        android:id="@+id/tvErrorPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF5252"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:visibility="invisible" />
+
+    <!-- Botón de Login -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/morado_gamer"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón de Huella -->
+    <Button
+        android:id="@+id/btnHuella"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresar con Huella"
+        android:textColor="@color/cian_neon"
+        android:backgroundTint="@color/fondo_oscuro"
+        android:outlineProvider="bounds"/>
+
+    <!-- NUEVO: Texto para recuperar contraseña -->
+    <TextView
+        android:id="@+id/tvOlvidePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textColor="@color/gris_texto"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
